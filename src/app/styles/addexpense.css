@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.expense-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    font-weight: bold;
+    max-width: 400px;
+    width: 100%;
+    align-items: stretch;
+    animation: fadeIn 1s ease-in-out;
+}
+
+label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-weight: bold;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(10px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+input, select {
+    padding: 10px;  
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4) inset;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+input::placeholder {
+    color: #ffffff;
+    opacity: 0.5;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+input[type="text"]:hover, input[type="number"]:hover {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+option {
+    color: black;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffffff;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.radio label {
+    padding-right: 20px;
+}
+
+.radio input {
+    width: fit-content;
+}
+
+button {
+    background: rgba(11, 132, 145, 0.8);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 10px;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+button:hover {
+    background: rgba(11, 132, 145, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.split-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.error {
+    color: red;
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.split-cred {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4) inset;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 10px;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.user-input-container {
+    max-height: 370px; 
+    overflow-y: auto;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.user-input-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.user-input-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.user-input-container::-webkit-scrollbar-thumb {
+    background: rgba(11, 132, 145, 0.8);
+    border-radius: 8px;
+}
+
+.user-input-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(11, 132, 145, 1);
+}

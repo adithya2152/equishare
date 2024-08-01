@@ -1,0 +1,109 @@
+.split-section {
+    background: linear-gradient(145deg, #f3f4f6, #e5e7eb);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .split-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .split-section select,
+  .split-section input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border 0.3s ease;
+  }
+  
+  .split-section select:focus,
+  .split-section input:focus {
+    border-color: #3b82f6;
+    outline: none;
+  }
+  
+  .user-input-container {
+    margin-bottom: 16px;
+  }
+  
+  .split-cred {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .split-cred label {
+    margin-bottom: 4px;
+  }
+  
+  .split-cred input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border 0.3s ease;
+  }
+  
+  .split-cred input:focus {
+    border-color: #3b82f6;
+    outline: none;
+  }
+  
+  .input-group {
+    margin-bottom: 16px;
+  }
+  
+  .input-label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #3b82f6;
+    outline: none;
+  }
+  
+  .error-message {
+    color: #ef4444;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  button {
+    background: #3b82f6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background: #2563eb;
+  }
+  
+  button:disabled {
+    background: #a5b4fc;
+    cursor: not-allowed;
+  }
+  

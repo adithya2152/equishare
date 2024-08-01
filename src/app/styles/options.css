@@ -1,0 +1,39 @@
+.options-container {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px; /* Increase the gap to place the buttons farther from each other */
+    transform: rotate(-10deg);
+  }
+  
+  .crazy-button {
+    background: linear-gradient(45deg, #ff6b6b, #f94d6a, #ff9a76);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    transform: rotate(10deg);
+  }
+  
+  .crazy-button:hover {
+    transform: rotate(0deg) scale(1.1);
+    background: linear-gradient(45deg, #ff9a76, #ff6b6b, #f94d6a);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  }
+  

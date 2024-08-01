@@ -1,0 +1,93 @@
+.requests-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .requests-card {
+    background-color:rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+  }
+  .requests-card p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color:#fff;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .requests-card-sending_user,
+  .requests-card-split_amount,
+  .requests-card-split_method,
+  .requests-card-date_of_request {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .requests-card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .requests-card-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .requests-card-accept {
+    background-color: #4CAF50; /* Green */
+  }
+  
+  .requests-card-reject {
+    background-color: #f44336; /* Red */
+  }
+   
+  .request-header
+  {
+    display: flex;
+    justify-content: space-between;
+  } 
+  .request-header h2 {
+    margin: 0;
+    font-size: 24px;
+  } 
+  .request-header a
+  {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .request-header a:hover
+  {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+  }
+  
